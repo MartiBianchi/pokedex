@@ -31,10 +31,10 @@ export const HomeScreen = () => {
           ListHeaderComponent={(
             <Text style={{
               ...styles.title,
-              ...styles.globalMargin,
               top: top + 20,
               marginBottom: top + 20,
-              padding: 10
+              padding: 10,
+              marginLeft: 0
             }}>
               Pokedex
             </Text>
@@ -44,7 +44,7 @@ export const HomeScreen = () => {
 
           // Infinite Scroll
           onEndReached={ loadPokemons }
-          onEndReachedThreshold={ 0.4 }
+          onEndReachedThreshold={ 0.5 }
 
           // Loading 
           ListFooterComponent={( 
